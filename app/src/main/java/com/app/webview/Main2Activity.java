@@ -18,7 +18,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import
+import com.facepp.error.FaceppParseException;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
