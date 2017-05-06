@@ -25,15 +25,6 @@ public class InternetDetect {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                /*1.设置请求
-                * 2.创建一个Bitmap
-                * 3.创建字符数组流
-                * 4.将bitmap转换为字符并传入流中
-                * 5.新建字符数组接受流
-                * 6.创建发送数据包
-                * 7.创建接受数据包
-                *
-                * */
                 try {
 
                     HttpRequests httpRequests=new HttpRequests(Constant.Key,Constant.Secret,true,true);

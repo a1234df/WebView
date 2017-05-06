@@ -194,7 +194,7 @@ public class Main2Activity extends ActionBarActivity implements View.OnClickList
             //获取得到几个人脸
             int faceCount=faces.length();
             //让提示文本显示人脸数
-            tip.setText("find"+faceCount);
+            tip.setText("find this man"+faceCount);
             //下面对每一张人脸都进行单独的信息绘制
             for(int i=0;i<faceCount;i++)
             {

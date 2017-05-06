@@ -3,6 +3,7 @@ package com.app.webview;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +15,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import android.graphics.Bitmap;
-import android.view.View.OnClickListener;
 import android.content.Context;
 
 public class MainActivity extends AppCompatActivity {
@@ -80,12 +80,12 @@ public class MainActivity extends AppCompatActivity {
         webView = (WebView)this.findViewById(R.id.rtsp_player);
     }
     private void PlayRtspStream(String rtspUrl){
+        WebSettings settings = webView.getSettings();
+        settings.setUseWideViewPort(true);
+        settings.setLoadWithOverviewMode(true);
         webView.loadUrl(rtspUrl);
         webView.requestFocus();
 
-
     }
-
-    //play rtsp stream
 
 }
